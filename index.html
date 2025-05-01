@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeoCity Vision Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #ffffff;
+      --accent: #0077ff;
+      --highlight: #ffd700;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header, section, footer {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('neocity_hero_background.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 200px 20px 150px;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #ddd;
+    }
+    .btn {
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+      margin: 10px;
+    }
+    .btn:hover {
+      background: var(--highlight);
+      color: #000;
+    }
+    blockquote {
+      border-left: 4px solid var(--highlight);
+      padding-left: 15px;
+      margin: 30px 0;
+      font-style: italic;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--highlight);
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+    ul li::before {
+      content: "\2022";
+      color: var(--accent);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+    }
+    .cta {
+      text-align: center;
+    }
+    .preview img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #222;
+      font-size: 0.9rem;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #999;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: var(--highlight);
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      header, section, footer { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Designing the Cities of the Future</h1>
+    <p>We help overlooked coastal regions become iconic global destinations through vision-driven development, planning, and storytelling.</p>
+    <a href="#zanzibar" class="btn">See the Vision</a>
+    <a href="#contact" class="btn">Get Involved</a>
+  </header>
+
+  <section id="about">
+    <h2>About NeoCity</h2>
+    <blockquote>“This isn’t just architecture. It’s storytelling, strategy, identity, and global positioning.”</blockquote>
+    <p>NeoCity Vision Studio works with governments, planners, and early backers to imagine and shape the next generation of cities. We specialize in transforming underdeveloped coastal or trade corridors into thriving, respected, future-ready destinations. Our approach blends urban design, economic strategy, and place branding into one cohesive blueprint — because building a city is about more than concrete and capital. It’s about meaning, momentum, and identity.</p>
+  </section>
+
+  <section id="zanzibar">
+    <h2>Zanzibar: A Global Destination in the Making</h2>
+    <ul>
+      <li>Over 900,000+ tourists per year</li>
+      <li>Direct access to East Africa’s shipping corridor</li>
+      <li>Local support and long-term development interest</li>
+    </ul>
+    <p>Our flagship vision reimagines Zanzibar as a luxury port, coastal innovation district, and tourism capital. We envision a city that blends timeless island culture with cutting-edge infrastructure, designed for climate resilience, international commerce, and sustainable growth. This is our prototype for what’s possible elsewhere.</p>
+  </section>
+
+  <section class="preview">
+    <h2>Preview the Vision</h2>
+    <img src="neocity_hero_background.jpg" alt="Floating city preview image">
+    <p style="text-align:center; margin-top:10px; font-size: 0.9rem;">*Conceptual imagery representing the spirit of NeoCity-style development</p>
+  </section>
+
+  <section id="filter">
+    <blockquote>If you’re looking for fast returns and quick flips, this isn’t for you. NeoCity is about shaping the future. Long-term vision. Real impact. Generational value.</blockquote>
+    <p style="text-align:center;">This is legacy work. We're designing cities that your grandchildren will visit — or build next.</p>
+  </section>
+
+  <section id="contact" class="cta">
+    <h2>We’re Looking for Early Believers</h2>
+    <p>We’re assembling a global network of designers, advisors, backers, planners, storytellers, and vision-builders. If that sounds like you, let’s connect.</p>
+    <a href="mailto:neocityvision.studio@gmail.com" class="btn">Let’s Talk</a>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#zanzibar">Zanzibar</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p style="margin-top: 20px;">Site built by NeoCity Vision Studio — future in progress.</p>
+  </footer>
+
+</body>
+</html>
