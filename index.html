@@ -7,148 +7,19 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>NeoCity Vision Studio</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<style>
-    :root {
-      --bg: #0a0a0a;
-      --text: #ffffff;
-      --accent: #0077ff;
-      --highlight: #ffd700;
-      --muted: #999999;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
-    header, section, footer {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                  url('neocity_hero_background.jpg');
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-      padding: 200px 20px 150px;
-      color: white;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 40px;
-      color: #ddd;
-    }
-    .btn {
-      padding: 14px 28px;
-      border: none;
-      border-radius: 6px;
-      background: var(--accent);
-      color: white;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: 0.3s;
-      display: inline-block;
-      margin: 10px;
-    }
-    .btn:hover {
-      background: var(--highlight);
-      color: #000;
-    }
-    blockquote {
-      border-left: 4px solid var(--highlight);
-      padding-left: 15px;
-      margin: 30px 0;
-      font-style: italic;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: var(--highlight);
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-      margin-bottom: 20px;
-    }
-    ul li::before {
-      content: "\2022";
-      color: var(--accent);
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-    }
-    .cta {
-      text-align: center;
-    }
-    .preview img {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    footer {
-      text-align: center;
-      padding-top: 30px;
-      border-top: 1px solid #222;
-      font-size: 0.9rem;
-    }
-    nav a {
-      margin: 0 10px;
-      color: var(--muted);
-      text-decoration: none;
-    }
-    nav a:hover {
-      color: var(--highlight);
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-    .form {
-      max-width: 500px;
-      margin: 20px auto;
-      display: flex;
-      flex-direction: column;
-    }
-    .form input, .form textarea {
-      padding: 12px;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      border: none;
-    }
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2rem; }
-      .hero p { font-size: 1rem; }
-      header, section, footer { padding: 40px 20px; }
-    }
-  </style>
+
 
 <style>
   .prototype-bg {
     background-image: url('images/prototype.jpg');
     background-size: cover;
     background-position: center;
-    padding: 4rem 2rem;
-    color: white;
-    text-align: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
   }
   .prototype-bg .overlay {
@@ -157,6 +28,8 @@
     max-width: 800px;
     margin: 0 auto;
     border-radius: 12px;
+    color: white;
+    text-align: center;
   }
   .prototype-bg h2 {
     font-size: 2rem;
@@ -165,7 +38,100 @@
   .prototype-bg p {
     font-size: 1.2rem;
   }
+
+  #government-qa {
+    background-color: #f4f4f4;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+  }
+  #government-qa h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  #government-qa ul {
+    list-style-type: none;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #government-qa li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  #government-qa strong {
+    color: #007acc;
+  }
 </style>
+
+
+
+
+
+<style>
+  .prototype-bg {
+    background-image: url('images/prototype.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .prototype-bg .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+  }
+  .prototype-bg h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .prototype-bg p {
+    font-size: 1.2rem;
+  }
+
+  #government-qa {
+    background-color: #f4f4f4;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+  }
+  #government-qa h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  #government-qa ul {
+    list-style-type: none;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #government-qa li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  #government-qa strong {
+    color: #007acc;
+  }
+</style>
+
+
 
 </head>
 <body>
@@ -175,16 +141,7 @@
 <a class="btn" href="#zanzibar">See the Vision</a>
 <a class="btn" href="#contact">Get Involved</a>
 </header>
-<section id="about">
 
-<h2>About NeoCity</h2>
-<blockquote>“This isn’t just architecture. It’s storytelling, strategy, identity, and global positioning.”</blockquote>
-<p>NeoCity Vision Studio helps governments and communities co-create future-ready cities — ones that protect cultural identity, ensure public control of land, and invite the world without selling it off. Our pilot project, Kisiwa Mpya, is a 1-square-mile prototype in Zanzibar that shows how tourism, equity, and walkability can thrive together. We build with intention, not speculation.</p>
-
-<h2>About NeoCity</h2>
-<blockquote>“This isn’t just architecture. It’s storytelling, strategy, identity, and global positioning.”</blockquote>
-<p>NeoCity Vision Studio works with governments, planners, and early backers to imagine and shape the next generation of cities. We specialize in transforming underdeveloped coastal or trade corridors into thriving, respected, future-ready destinations. Our approach blends urban design, economic strategy, and place branding into one cohesive blueprint — because building a city is about more than concrete and capital. It’s about meaning, momentum, and identity.</p>
-</section>
 <section id="zanzibar">
 
 <h2>Zanzibar: A Global Destination in the Making</h2>
