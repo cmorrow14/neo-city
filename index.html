@@ -1,27 +1,82 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>NeoCity Vision Studio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeoCity Vision Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header, section {
+      padding: 2rem;
+      background: #fff;
+      margin: 1rem auto;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #222;
+    }
+    p {
+      color: #333;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: #005a99;
+    }
+  </style>
 </head>
 <body>
+
+  <header>
     <h1>Building the Cities That Belong to Their People</h1>
     <p>Kisiwa Mpya is a walkable, culturally rooted prototype city — starting in Zanzibar, designed for locals, and ready to inspire the world.</p>
+  </header>
 
-    <section id="about">
-        <p>NeoCity Vision Studio helps governments and communities co-create future-ready cities — ones that protect cultural identity, ensure public control of land, and invite the world without selling it off. Our pilot project, Kisiwa Mpya, is a 1-square-mile prototype in Zanzibar that shows how tourism, equity, and walkability can thrive together. We build with intention, not speculation.</p>
-    </section>
+  <section id="about">
+    <h2>About NeoCity Vision Studio</h2>
+    <p>NeoCity Vision Studio helps governments and communities co-create future-ready cities — ones that protect cultural identity, ensure public control of land, and invite the world without selling it off. Our pilot project, Kisiwa Mpya, is a 1-square-mile prototype in Zanzibar that shows how tourism, equity, and walkability can thrive together. We build with intention, not speculation.</p>
+  </section>
 
-    <section id="zanzibar">
-        <p>This is our prototype for what’s possible elsewhere.</p>
-        <p>And in doing so, we help Zanzibar become a symbol — not of exploitation, but of visionary, sovereign development.</p>
-    </section>
+  <section id="zanzibar">
+    <h2>Why Zanzibar</h2>
+    <p>This is our prototype for what’s possible elsewhere.</p>
+    <p>And in doing so, we help Zanzibar become a symbol — not of exploitation, but of visionary, sovereign development.</p>
+  </section>
 
-    <section id="engage">
-        <p><a href="path/to/NeoCity_Gov_Brief.pdf" class="btn">📄 Read Our Government Brief</a></p>
-        <form>
-            <!-- Contact form contents -->
-        </form>
-    </section>
+  <section id="call-to-action">
+    <h2>We’re Looking for Early Believers</h2>
+    <p><a href="path/to/NeoCity_Gov_Brief.pdf" class="btn">📄 Read Our Government Brief</a></p>
+    <p>Urbanists, cultural advisors, funders, planners, diaspora leaders — this city is being built for the long haul. Want to help shape it?</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name"><br/><br/>
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email"><br/><br/>
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br/><br/>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
 </body>
 </html>
