@@ -1,53 +1,248 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NeoCity Vision Studio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NeoCity Vision Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #ffffff;
+      --accent: #0077ff;
+      --highlight: #ffd700;
+      --muted: #999999;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header, section, footer {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('neocity_hero_background.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 200px 20px 150px;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #ddd;
+    }
+    .btn {
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+      margin: 10px;
+    }
+    .btn:hover {
+      background: var(--highlight);
+      color: #000;
+    }
+    blockquote {
+      border-left: 4px solid var(--highlight);
+      padding-left: 15px;
+      margin: 30px 0;
+      font-style: italic;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--highlight);
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+    ul li::before {
+      content: "\2022";
+      color: var(--accent);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+    }
+    .cta {
+      text-align: center;
+    }
+    .preview img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #222;
+      font-size: 0.9rem;
+    }
+    nav a {
+      margin: 0 10px;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: var(--highlight);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    .form {
+      max-width: 500px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .form input, .form textarea {
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      header, section, footer { padding: 40px 20px; }
+    }
+  </style>
 </head>
 <body>
+<header class="hero">
+<h1>Designing the Cities of the Future</h1>
+<p>We help overlooked coastal regions become iconic global destinations through vision-driven development, planning, and storytelling.</p>
+<a class="btn" href="#zanzibar">See the Vision</a>
+<a class="btn" href="#contact">Get Involved</a>
+</header>
+<section id="about">
 
-  <header>
-    <h1>Building the Cities That Belong to Their People</h1>
-    <p>Kisiwa Mpya is a walkable, culturally rooted prototype city — starting in Zanzibar, designed for locals, and ready to inspire the world.</p>
-  </header>
+<h2>About NeoCity</h2>
+<blockquote>“This isn’t just architecture. It’s storytelling, strategy, identity, and global positioning.”</blockquote>
+<p>NeoCity Vision Studio helps governments and communities co-create future-ready cities — ones that protect cultural identity, ensure public control of land, and invite the world without selling it off. Our pilot project, Kisiwa Mpya, is a 1-square-mile prototype in Zanzibar that shows how tourism, equity, and walkability can thrive together. We build with intention, not speculation.</p>
 
-  <section id="about">
-    <h2>About NeoCity Vision Studio</h2>
-    <p>NeoCity Vision Studio helps governments and communities co-create future-ready cities — ones that protect cultural identity, ensure public control of land, and invite the world without selling it off. Our pilot project, Kisiwa Mpya, is a 1-square-mile prototype in Zanzibar that shows how tourism, equity, and walkability can thrive together. We build with intention, not speculation.</p>
-  </section>
+<h2>About NeoCity</h2>
+<blockquote>“This isn’t just architecture. It’s storytelling, strategy, identity, and global positioning.”</blockquote>
+<p>NeoCity Vision Studio works with governments, planners, and early backers to imagine and shape the next generation of cities. We specialize in transforming underdeveloped coastal or trade corridors into thriving, respected, future-ready destinations. Our approach blends urban design, economic strategy, and place branding into one cohesive blueprint — because building a city is about more than concrete and capital. It’s about meaning, momentum, and identity.</p>
+</section>
+<section id="zanzibar">
 
-  <section id="city-name">
-    <h2>What Does “Kisiwa Mpya” Mean?</h2>
-    <p>“Kisiwa Mpya” is Swahili for “New Island.” It reflects the spirit of renewal — not by erasing the past, but by building on it. This name honors Zanzibar’s island identity while offering a bold symbol for what a better future can look like when shaped locally.</p>
-  </section>
+<h2>Zanzibar: A Global Destination in the Making</h2>
+<ul>
+<li>Tourism economy growing at 15% per year</li>
+<li>Strategic location on Indian Ocean trade routes</li>
+<li>Ongoing port upgrades and cultural momentum</li>
+</ul>
+<p>Kisiwa Mpya reimagines Zanzibar as a globally respected port district and cultural capital — built not to replace the island’s identity, but to amplify it. This 1-square-mile prototype showcases what’s possible when tourism, infrastructure, and community values align. It’s not just a plan for Zanzibar — it’s a model for every underleveraged coastal region ready for its next chapter.</p>
 
-  <section id="zanzibar">
-    <h2>Why Zanzibar</h2>
-    <p>This is our prototype for what’s possible elsewhere.</p>
-    <p>And in doing so, we help Zanzibar become a symbol — not of exploitation, but of visionary, sovereign development.</p>
-  </section>
+<h2>Zanzibar: A Global Destination in the Making</h2>
+<ul>
+<li>Over 900,000+ tourists per year</li>
+<li>Direct access to East Africa’s shipping corridor</li>
+<li>Local support and long-term development interest</li>
+</ul>
+<p>Our flagship vision reimagines Zanzibar as a luxury port, coastal innovation district, and tourism capital. We envision a city that blends timeless island culture with cutting-edge infrastructure, designed for climate resilience, international commerce, and sustainable growth. This is our prototype for what’s possible elsewhere.</p>
+</section>
 
-  <section id="call-to-action">
-    <h2>We’re Looking for Early Believers</h2>
-    <p><a href="path/to/NeoCity_Gov_Brief.pdf" class="btn">📄 Read Our Government Brief</a></p>
-    <p>Urbanists, cultural advisors, funders, planners, diaspora leaders — this city is being built for the long haul. Want to help shape it?</p>
-  </section>
+<section id="kisiwa-name">
+  <h2>What Does “Kisiwa Mpya” Mean?</h2>
+  <p>“Kisiwa Mpya” is Swahili for “New Island.” It reflects the spirit of renewal — not by erasing the past, but by building on it. This name honors Zanzibar’s island identity while offering a bold symbol for what a better future can look like when shaped locally.</p>
+</section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label><br/>
-      <input type="text" id="name" name="name"><br/><br/>
-      <label for="email">Email:</label><br/>
-      <input type="email" id="email" name="email"><br/><br/>
-      <label for="message">Message:</label><br/>
-      <textarea id="message" name="message" rows="4" cols="50"></textarea><br/><br/>
-      <input type="submit" value="Send">
-    </form>
-  </section>
-
+<section class="preview">
+<h2>Preview the Vision</h2>
+<div class="gallery"><img alt="Zanzibar Market Vision" src="zanzibar_market_scene.jpg"/><img alt="Futuristic Port Concept" src="futuristic_port_scene.jpg"/></div>
+<p style="text-align:center; margin-top:10px; font-size: 0.9rem;">*Conceptual imagery representing the spirit of NeoCity-style development</p>
+</section>
+<section id="filter">
+<blockquote>If you’re looking for fast returns and quick flips, this isn’t for you. NeoCity is about shaping the future. Long-term vision. Real impact. Generational value.</blockquote>
+<p style="text-align:center;">This is legacy work. We're designing cities that your grandchildren will visit — or build next.</p>
+</section>
+<section id="prototype" style="padding: 4rem 1rem; background-color: #f5f5f5;">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+<!-- Text Column -->
+<div style="flex: 1 1 500px; color: #111;">
+<h2 style="font-size: 2rem; margin-bottom: 1rem;">🧪 The NeoCity Prototype District</h2>
+<p style="font-size: 1.1rem; line-height: 1.6;">
+<strong>Before we build the future, we invite people to walk through it.</strong><br/><br/>
+          We’re creating a traveling, immersive exhibit — a real, walkable micro-city you can visit and explore.
+          <br/><br/>
+          The NeoCity Prototype is a 3,000–5,000 sq ft urban sandbox: a flexible installation that transforms underused malls, ferry terminals, or warehouses into compact districts you can feel with your feet. But it’s not about copying Zanzibar — it’s about reimagining what a future city could feel like <em>right here</em>.
+          <br/><br/>
+          In Chicago, it might echo industrial revival. In Texas, border trade and civic resilience. In Zanzibar, island ports and culture.
+          <br/><br/>
+          Each version features modular housing pods, street grid floorplans, sensory elements, and kiosks that reflect local identity — all tied together by one goal: to prototype a city you never need to leave. Inside the installation, visitors explore housing, commerce, culture, and gathering — not as isolated zones, but as one fluid ecosystem.
+          <br/><br/>
+<strong>It’s not just a model — it’s a message:</strong><br/>
+<em>The cities we dream about aren’t far off. They’re just waiting to be built right.</em>
+</p>
+</div>
+<!-- Image Column -->
+<div style="flex: 1 1 400px; text-align: center;">
+<img alt="Illustration of a future city prototype blending local marketplace and upper-story housing" src="neocity_prototype_scene.jpg" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"/>
+</div>
+</div>
+</section>
+<section id="global-vision" style="padding: 4rem 1rem; background-color: #111;">
+<div style="max-width: 1000px; margin: 0 auto; text-align: center; color: #111;; color: #eee;">
+<h2 style="font-size: 2rem; margin-bottom: 1rem;">🌍 Zanzibar First. The World Next.</h2>
+<p style="font-size: 1.1rem; line-height: 1.6; max-width: 750px; margin: 0 auto;">
+        NeoCity is starting in Zanzibar — but designed to be adapted to coastal cities everywhere.
+        <br/><br/>
+        We’re building a framework for walkable, culturally grounded urbanism that can be localized in Texas, India, East Africa, or anywhere future meets water.
+      </p>
+</div>
+</section>
+<section class="cta" id="contact">
+<h2>We’re Looking for Early Believers</h2>
+<p>We’re assembling a global network of designers, advisors, backers, planners, storytellers, and vision-builders. If that sounds like you, let’s connect.</p>
+<form action="mailto:neocityvision.studio@gmail.com" class="form" enctype="text/plain" method="POST">
+<input name="name" placeholder="Your Name" required="" type="text"/>
+<input name="email" placeholder="Your Email" required="" type="email"/>
+<textarea name="message" placeholder="Your Message" required="" rows="5"></textarea>
+<button class="btn" type="submit">Send Message</button>
+</form>
+</section>
+<footer>
+<nav>
+<a href="#about">About</a>
+<a href="#zanzibar">Zanzibar</a>
+<a href="#contact">Contact</a>
+</nav>
+<p style="margin-top: 20px;">Site built by NeoCity Vision Studio — future in progress.</p>
+</footer>
 </body>
 </html>
