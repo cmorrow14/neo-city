@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Neo Cities Vision Studios LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Neo Cities Vision Studios is building walkable, human-scale city districts for the next century." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #05070a;
+      --card: #10141b;
+      --text: #f5f7fb;
+      --muted: #9aa3b0;
+      --accent: #d2a945; /* change to #4aa3ff if you want blue later */
+      --stroke: #252a32;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: url('https://unfocussed.com/cdn/shop/articles/Mindscapes_Unveiled_904594db-e73a-4b1d-aef1-66f698acaa59.png?crop=center&format=jpg&height=1200&v=1710877078&width=2400') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(5,7,10,0.85); /* Dark overlay for readability */
+      z-index: -1;
+    }
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--stroke);
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: .06em;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .tagline {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: right;
+    }
+    main {
+      display: grid;
+      gap: 32px;
+    }
+    .hero {
+      padding: 28px 22px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(210,169,69,0.12), rgba(7,11,18,0.95));
+      border: 1px solid rgba(210,169,69,0.4);
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.1;
+    }
+    .hero p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      max-width: 46rem;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(210,169,69,0.7);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      color: var(--accent);
+      background-color: rgba(0,0,0,0.4);
+    }
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 24px;
+    }
+    .card {
+      padding: 18px 18px 20px;
+      border-radius: 14px;
+      background: var(--card);
+      border: 1px solid var(--stroke);
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+    .card p {
+      margin: 0 0 8px;
+      font-size: 0.93rem;
+      color: var(--muted);
+    }
+    .list {
+      margin: 6px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+    .badge-row {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .badge {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      border-radius: 999px;
+      padding: 4px 8px;
+      border: 1px solid var(--stroke);
+      color: var(--muted);
+    }
+    .status {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+    .status strong {
+      color: var(--accent);
+    }
+    .cta {
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 16px;
+      border-radius: 999px;
+      border: 0;
+      background: var(--accent);
+      color: #151515;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 4px;
+    }
+    .btn span {
+      margin-left: 6px;
+      font-size: 1rem;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--stroke);
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 720px) {
+      header { flex-direction: column; align-items: flex-start; gap: 6px; }
+      .tagline { text-align: left; }
+      .grid { grid-template-columns: minmax(0, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Neo Cities Vision Studios LLC</div>
+      <div class="tagline">Designing walkable, human-scale districts for the next century.</div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="pill">
+          <span class="pill-dot"></span>
+          <span>Early-stage urban design studio</span>
+        </div>
+        <h1>A new kind of city: closer, walkable, and built around everyday life.</h1>
+        <p>
+          Neo Cities Vision Studios is a small, vision-led studio working on the next generation of
+          walkable districts — places where housing, food, healthcare, learning, and public life live
+          within a short walk, not a long commute.
+        </p>
+        <p class="status">
+          <strong>Current status:</strong> early design, research, and partnership-building. No land
+          sales. No mega-city hype. Just careful groundwork for a real place.
+        </p>
+        <a class="btn" href="mailto:Connor2morrow@gmail.com">
+          Contact Neo Cities
+          <span>↗</span>
+        </a>
+      </section>
+      <section class="grid">
+        <div class="card">
+          <h2>What Neo Cities is</h2>
+          <p>
+            Neo Cities exists because the world doesn’t need bigger cities — it needs closer ones.
+            Cities where you know your neighbors. Where your child’s school isn’t 20 minutes through
+            traffic. Where the doctor, the market, and the park are all part of the same daily walk.
+          </p>
+          <p>
+            We’re focused on one clear question: what does a modern, walkable district look like if
+            it’s built for people first, not cars, speculation, or mega-project ego?
+          </p>
+          <ul class="list">
+            <li>Human-scale blocks, not endless highways</li>
+            <li>Homes, markets, healthcare, and learning close together</li>
+            <li>Public spaces that belong to everyday life, not just tourists</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>What we’re building</h2>
+          <p>
+            The studio is developing a prototype district: a compact, walkable neighborhood that
+            can stand on its own and be repeated or adapted in other cities over time.
+          </p>
+          <p>
+            It’s not a “smart city” buzzword project. It’s a long-term, brick-by-brick effort to
+            prove that better urban life is possible — and practical.
+          </p>
+          <div class="badge-row">
+            <span class="badge">Walkability</span>
+            <span class="badge">Local economy</span>
+            <span class="badge">Public life</span>
+            <span class="badge">Long-term stewardship</span>
+          </div>
+        </div>
+      </section>
+      <section class="grid">
+        <div class="card">
+          <h2>How we work</h2>
+          <p>
+            Neo Cities is intentionally small and lean. We work like a studio, not a bureaucracy:
+            testing ideas, pressure-checking assumptions, and only keeping what survives contact
+            with real people and real constraints.
+          </p>
+          <ul class="list">
+            <li>Early collaboration with local partners and advisors</li>
+            <li>Design that respects culture and existing communities</li>
+            <li>Financial models that aim for long-term stability, not quick flips</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Stay in the loop</h2>
+          <p>
+            Right now, we’re not chasing big hype or splashy announcements. We’re doing the slow,
+            unglamorous work that every real place needs at the beginning.
+          </p>
+          <p class="cta">
+            If you’re an investor, planner, designer, or just someone who cares about the future of
+            cities and wants to talk, reach out directly:
+          </p>
+          <p class="cta">
+            <a href="mailto:Connor2morrow@gmail.com">Connor2morrow@gmail.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>© <span id="year"></span> Neo Cities Vision Studios LLC</div>
+      <div>Built as an early snapshot of a long-term project in progress.</div>
+    </footer>
+  </div>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
